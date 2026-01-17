@@ -1,5 +1,5 @@
 #include <iostream>
-#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -10,15 +10,17 @@ int main() {
     int n;
     cin >> n;
 
-    map<int, int> mp;
+    vector<int> arr(n + 1, 0);
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < 2 * n; i++) {
         int a;
         cin >> a;
-        mp[a]++;
+        arr[a]++;
     }
 
-    cout << mp.begin()->first << endl;
+    for (int i = 1; i <= n; i++) 
+        if (arr[i] == 1) 
+            cout << i << endl;
 
     return 0;
 }

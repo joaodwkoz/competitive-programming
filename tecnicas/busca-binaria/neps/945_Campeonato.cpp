@@ -34,3 +34,12 @@ int main() {
         if (isValid(m, c, b)) {
             ans = m;
             h = m - 1;
+        } else {
+            l = m + 1;
+        }
+    }
+
+    cout << ans << endl;
+
+    return 0;
+}

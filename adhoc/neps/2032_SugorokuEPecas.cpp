@@ -28,7 +28,7 @@ int main() {
         int x;
         cin >> x;
         if (pcs[x] < 2019 && !board[pcs[x] + 1]) {
-            board[pcs[x] + 1] = pcs[x];
+            board[pcs[x] + 1] = 1;
             board[pcs[x]] = 0;
             pcs[x]++;
         }

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struct Imc {
+struct Pessoa {
     int id;
     double p, a;
     
@@ -27,19 +27,16 @@ struct Imc {
             return "obesidade grau 3";
         }
     }
-} u;
+};
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int id;
-    double p, a;
-    cin >> id >> p >> a;
+    Pessoa x;
+    cin >> x.id >> x.p >> x.a;
 
-    u = {id, p, a};
-
-    cout << u.getClassification() << endl;
+    cout << x.getClassification() << endl;
 
     return 0;
 }

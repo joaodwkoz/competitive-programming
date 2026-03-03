@@ -43,11 +43,10 @@ int main() {
     if (!s) {
         if (m == 1) {
             cout << "0 0" << endl;
-            return 0;
         } else {
             cout << "-1 -1" << endl;
-            return 0;
         }
+        return 0;
     } else if (s > m * 9) {
         cout << "-1 -1" << endl;
         return 0;

@@ -2,22 +2,22 @@
 
 using namespace std;
 
-int cnt[2];
-
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n;
+    int n, cnt = 0;
     cin >> n;
 
     for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
-        cnt[x - 1]++;
+        if (x == 2) {
+            cnt += 1;
+        }
     }
 
-    cout << ((cnt[1] + cnt[0]) % 2) << endl << (cnt[1] % 2) << endl;
+    cout << n % 2 << endl << cnt % 2 << endl;
 
     return 0;
 }

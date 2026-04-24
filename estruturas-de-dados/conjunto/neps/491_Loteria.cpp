@@ -9,7 +9,7 @@ int main(){
 
     int x;
     set<int> st;
- for (int i = 1; i <= 6; i++) {
+    for (int i = 1; i <= 6; i++) {
         cin >> x;
         st.insert(x);
     }

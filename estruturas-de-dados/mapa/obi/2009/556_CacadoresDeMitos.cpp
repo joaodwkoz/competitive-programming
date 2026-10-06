@@ -12,14 +12,13 @@ int main() {
     cin >> n;
 
     map<pair<int, int>, int> freq;
-    int ans = 0;
-    
-    for(int i = 1; i <= n; i++){
-        int x, y;
+    int ans = 0, x, y;
+    for (int i = 1; i <= n; i++) {
         cin >> x >> y;
 
         freq[{x, y}]++;
-        if(freq[{x, y}] > 1){
+
+        if (freq[{x, y}] > 1) {
             ans = 1;
         }
     }
